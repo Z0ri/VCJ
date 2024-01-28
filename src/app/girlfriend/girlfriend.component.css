@@ -1,0 +1,19 @@
+.container{
+    text-align: center;
+}
+/*separatore*/ 
+hr{ 
+    width: 80%;
+    height: 1px;
+    background-color: #7B1FA2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*titoli*/
+label{
+    font-size: 20px;
+    font-family: 'Roboto';
+    color: #58c64b;
+}
+
+  

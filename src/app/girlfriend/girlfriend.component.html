@@ -1,0 +1,30 @@
+<div class="container">
+        <p>{{age}}</p>
+        <label for="age">Insert age:</label>
+        <br>
+        <app-age (sendData)="onSendData($event)"></app-age>
+    <hr>
+        <label for="height">Insert height:</label>
+        <br>
+        <app-height></app-height>
+    <hr>
+        <label for="hair">Select hair:</label>
+        <br>
+        <app-hair></app-hair>
+    <hr>
+        <label for="body">Select body:</label>
+        <br>
+        <app-body></app-body>
+    <hr>
+        <label for="boobs">Select boob size:</label>
+        <br>
+        <app-boobs></app-boobs>
+    <hr>
+        <label for="eyes">Select eye color:</label>
+        <br>
+        <app-eyes></app-eyes>
+    <br>
+    <button mat-raised-button id="calculateBtn" (click)="calculate()">Calculate</button>
+</div>
+
+  

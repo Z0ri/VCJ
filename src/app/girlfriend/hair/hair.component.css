@@ -1,0 +1,20 @@
+.example-card {
+    max-width: 200px;
+    background-color: #308c26;
+    padding: 0;
+}
+
+.example-header-image {
+    background-size: cover;
+}
+.mat-card-image{
+    width: 200px;
+    height: 200px;
+}
+.hair_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 10px;
+}
