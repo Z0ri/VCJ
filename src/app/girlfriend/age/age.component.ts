@@ -7,7 +7,6 @@ import { EventEmitter } from '@angular/core';
   templateUrl: './age.component.html',
   styleUrl: './age.component.css'
 })
-@Injectable()
 export class AgeComponent {
   @Output() sendData = new EventEmitter<any>();
 
