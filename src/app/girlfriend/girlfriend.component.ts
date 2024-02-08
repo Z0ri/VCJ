@@ -16,30 +16,25 @@ export class GirlfriendComponent{
   body: string = "";  //da fare
   boobs: string = "";
   eyeColor: string = ""; //da fare
-  
+
   //ricezione anni
   onAgeReceived(value: number){
-    console.log(value);
     this.age = value;
   }
   //ricezione altezza
   onHeightReceived(value: number){
-    console.log(value);
     this.height = value;
   }
   //ricezione capelli
   onHairReceived(value: string){
-    console.log(value);
     this.hair = value;
   }
   //ricezione corpo
   onBodyReceived(value: string){
-    console.log(value);
     this.body = value;
   }
   //ricezione seno
   onBoobsReceived(value: string){
-    console.log(value);
     this.boobs = value;
   }
   //Calcolo J
