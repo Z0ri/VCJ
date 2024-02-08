@@ -3,13 +3,13 @@
         <br>
         <app-age (ageEmitter)="onAgeReceived($event)"></app-age>
     <hr>
-        <label for="height">Insert height:</label>
+        <label for="height">Insert height(cm):</label>
         <br>
         <app-height (heightEmitter)="onHeightReceived($event)"></app-height>
     <hr>
         <label for="hair">Select hair:</label>
         <br>
-        <app-hair></app-hair>
+        <app-hair (hairEmitter)="onHairReceived($event)"></app-hair>
     <hr>
         <label for="body">Select body:</label>
         <br>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-hair',
@@ -6,4 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './hair.component.css'
 })
 export class HairComponent {
+  @Output()
+  hairEmitter = new EventEmitter<string>();
+  selectedHair: string = "";
+
+  onRadioButtonChange(event: Event){
+    this.selectedHair = (event.target as HTMLInputElement).value;
+    this.hairEmitter.emit(this.selectedHair);
+  }
 }

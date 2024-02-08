@@ -20,6 +20,7 @@ import { HeightComponent } from './girlfriend/height/height.component';
 import { BodyComponent } from './girlfriend/body/body.component';
 import { BoobsComponent } from './girlfriend/boobs/boobs.component';
 import { EyesComponent } from './girlfriend/eyes/eyes.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -45,7 +46,8 @@ import { EyesComponent } from './girlfriend/eyes/eyes.component';
     MatSliderModule,
     MatCardModule,
     MatSelectModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()
