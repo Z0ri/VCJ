@@ -8,18 +8,23 @@ import { AgeComponent } from './age/age.component';
 })
 export class GirlfriendComponent{
   @ViewChild(AgeComponent)
-  public child!: AgeComponent;
+  child!: AgeComponent;
 
-  public age: number = 5;
-
-  constructor(private ageComponent: AgeComponent){}
-
-  onSendData(value: string){
+  age: number = 0;
+  height: number = 0;
+  //ricezione anni
+  onAgeReceived(value: number){
     console.log(value);
+    this.age = value;
   }
+  //ricezione altezza
+  onHeightReceived(value: number){
+    console.log(value);
+    this.height = value;
+  }
+  //Calcolo J
   public calculate(){
-    this.age = this.child.age;
-    console.log("età da gf component: ",this.child.age);
+    console.log("age da girlfriendComponent: ",this.age);
+    console.log("height da girlfriendComponent: ",this.height);
   }
-
 }
