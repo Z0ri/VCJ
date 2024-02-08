@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-boobs',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './boobs.component.css'
 })
 export class BoobsComponent {
-  boobs = "large";
+  @Output()
+  boobsEmitter = new EventEmitter<string>();
+  boobs = "";
+
+  onRadioButtonChange($event: Event){
+    this.boobs = ($event.target as HTMLInputElement).value;
+    this.boobsEmitter.emit(this.boobs);
+  }
+
 }

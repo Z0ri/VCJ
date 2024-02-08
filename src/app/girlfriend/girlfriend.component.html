@@ -13,11 +13,11 @@
     <hr>
         <label for="body">Select body:</label>
         <br>
-        <app-body></app-body>
+        <app-body (bodyEmitter)="onBodyReceived($event)"></app-body>
     <hr>
         <label for="boobs">Select boob size:</label>
         <br>
-        <app-boobs></app-boobs>
+        <app-boobs (boobsEmitter)="onBoobsReceived($event)"></app-boobs>
     <hr>
         <label for="eyes">Select eye color:</label>
         <br>
