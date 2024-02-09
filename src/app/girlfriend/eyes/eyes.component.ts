@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-eyes',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './eyes.component.css'
 })
 export class EyesComponent {
-
+  @Output()
+  eyesEmitter = new EventEmitter<string>();
+  eyeColor = "";
+  selectEyes(){
+    this.eyesEmitter.emit(this.eyeColor);
+  }
 }

@@ -9,9 +9,8 @@ export class BodyComponent {
   @Output()
   bodyEmitter = new EventEmitter<string>();
   bodyType: string = "";
-  selectBody(event: Event) {
-    const src = event.target as HTMLInputElement;
-    console.log(src.value);
+  selectBody() {
+    console.log(this.bodyType);
+    this.bodyEmitter.emit(this.bodyType);
   }
-  
 }

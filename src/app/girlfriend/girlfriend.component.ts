@@ -37,6 +37,10 @@ export class GirlfriendComponent{
   onBoobsReceived(value: string){
     this.boobs = value;
   }
+  //ricezione occhi
+  onEyesReceived(value: string){
+    this.eyeColor = value;
+  }
   //Calcolo J
   public calculate(){
     console.log("age da girlfriendComponent: ",this.age);

@@ -1,9 +1,9 @@
 <mat-form-field>
     <mat-label>Select an option</mat-label>
-    <mat-select disableRipple>
-      <mat-option value="1">Skinny</mat-option>
-      <mat-option value="2">Fit</mat-option>
-      <mat-option value="3">Medium</mat-option>
-      <mat-option value="4">Fat</mat-option>
+    <mat-select disableRipple [(ngModel)]="bodyType">
+      <mat-option value="skinny" (click)="selectBody()">Skinny</mat-option>
+      <mat-option value="fit" (click)="selectBody()">Fit</mat-option>
+      <mat-option value="medium" (click)="selectBody()">Medium</mat-option>
+      <mat-option value="fat" (click)="selectBody()">Fat</mat-option>
     </mat-select>
 </mat-form-field>

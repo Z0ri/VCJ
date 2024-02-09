@@ -21,16 +21,17 @@
     <hr>
         <label for="eyes">Select eye color:</label>
         <br>
-        <app-eyes></app-eyes>
+        <app-eyes (eyesEmitter)="onEyesReceived($event)"></app-eyes>
     <br>
+    <hr>
     <button mat-raised-button id="calculateBtn" (click)="calculate()">Calculate</button>
     <li style="color: white;">
-        <ul>{{age}}</ul>
-        <ul>{{height}}</ul>
-        <ul>{{hair}}</ul>
-        <ul>{{body}}</ul>
-        <ul>{{boobs}}</ul>
-        <ul>{{eyeColor}}</ul>
+        <ul>age: {{age}}</ul>
+        <ul>height: {{height}}</ul>
+        <ul>hair: {{hair}}</ul>
+        <ul>body: {{body}}</ul>
+        <ul>boobs: {{boobs}}</ul>
+        <ul>eyeColor: {{eyeColor}}</ul>
     </li>
 </div>
 
