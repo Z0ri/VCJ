@@ -12,10 +12,10 @@ export class GirlfriendComponent{
 
   age: number = 0;
   height: number = 0;
-  hair: string = "";
-  body: string = "";  //da fare
-  boobs: string = "";
-  eyeColor: string = ""; //da fare
+  hair: number = 0;
+  body: number = 0;  //da fare
+  boobs: number = 0;
+  eyeColor: number = 0; //da fare
 
   //ricezione anni
   onAgeReceived(value: number){
@@ -27,26 +27,22 @@ export class GirlfriendComponent{
   }
   //ricezione capelli
   onHairReceived(value: string){
-    this.hair = value;
+    this.hair = parseInt(value);
   }
   //ricezione corpo
   onBodyReceived(value: string){
-    this.body = value;
+    this.body = parseInt(value);
   }
   //ricezione seno
   onBoobsReceived(value: string){
-    this.boobs = value;
+    this.boobs = parseInt(value);
   }
   //ricezione occhi
   onEyesReceived(value: string){
-    this.eyeColor = value;
+    this.eyeColor = parseInt(value);
   }
   //Calcolo J
   public calculate(){
-    console.log("age da girlfriendComponent: ",this.age);
-    console.log("height da girlfriendComponent: ",this.height);
-    console.log("hair da girlfriendComponent: ",this.hair);
-    console.log("body da girlfriendComponent: ",this.body);
-    console.log("boobs da girlfriendComponent: ",this.boobs);
+    
   }
 }
