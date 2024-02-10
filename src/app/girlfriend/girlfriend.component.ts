@@ -1,5 +1,6 @@
-import { Component, SimpleChanges, ViewChild } from '@angular/core';
+import { Component, Output, SimpleChanges, ViewChild } from '@angular/core';
 import { AgeComponent } from './age/age.component';
+import { ResultServiceService } from '../services/result-service.service';
 
 @Component({
   selector: 'app-girlfriend',
@@ -10,8 +11,10 @@ export class GirlfriendComponent{
   @ViewChild(AgeComponent)
   child!: AgeComponent;
 
+  constructor(private resultService: ResultServiceService){}
+  
   age: number = 0;
-  height: number = 0;
+  height: number = 100;
   hair: number = 0;
   body: number = 0;  //da fare
   boobs: number = 0;
@@ -43,6 +46,8 @@ export class GirlfriendComponent{
   }
   //Calcolo J
   public calculate(){
-    
+    let punteggioRel = this.age+(this.height-100)+this.hair+this.body+this.boobs+this.eyeColor;
+    let punteggio = punteggioRel;//punteggio minimo: 17
+    this.resultService.setPunteggio(punteggio);
   }
 }

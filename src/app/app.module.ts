@@ -22,6 +22,7 @@ import { BoobsComponent } from './girlfriend/boobs/boobs.component';
 import { EyesComponent } from './girlfriend/eyes/eyes.component';
 import { FormsModule } from '@angular/forms';
 import { CalculatingComponent } from './calculating/calculating.component';
+import { ResultComponent } from './result/result.component';
 
 
 
@@ -36,6 +37,7 @@ import { CalculatingComponent } from './calculating/calculating.component';
     BoobsComponent,
     EyesComponent,
     CalculatingComponent,
+    ResultComponent,
   ],
   imports: [
     BrowserModule,
