@@ -24,15 +24,7 @@
         <app-eyes (eyesEmitter)="onEyesReceived($event)"></app-eyes>
     <br>
     <hr>
-    <button mat-raised-button id="calculateBtn" (click)="calculate()">Calculate</button>
-    <li style="color: white;">
-        <ul>age: {{age}}</ul>
-        <ul>height: {{height}}</ul>
-        <ul>hair: {{hair}}</ul>
-        <ul>body: {{body}}</ul>
-        <ul>boobs: {{boobs}}</ul>
-        <ul>eyeColor: {{eyeColor}}</ul>
-    </li>
+    <button mat-raised-button id="calculateBtn" (click)="calculate()"  routerLink="calculating">Calculate</button>
 </div>
 
   
