@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ResultServiceService {
-  private punteggio: number = 0;
+  private punteggio: number = 1;
 
   public getPunteggio(): number{
     return this.punteggio;

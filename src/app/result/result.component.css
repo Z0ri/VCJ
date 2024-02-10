@@ -4,3 +4,8 @@
     background-color: white;
     text-align: center;
 }
+#result{
+    font-size: 50px;
+    color: darkgreen;
+    padding-top: 50px;
+}
