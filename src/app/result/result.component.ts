@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ResultServiceService } from '../services/result-service.service';
+
 @Component({
   selector: 'app-result',
   templateUrl: './result.component.html',
-  styleUrl: './result.component.css'
+  styleUrl: './result.component.css',
 })
 export class ResultComponent implements OnInit{
   punteggio: number = 0;
