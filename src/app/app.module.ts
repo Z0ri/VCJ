@@ -5,12 +5,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatCardModule} from '@angular/material/card';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { AppRoutingModule } from './app-routing.module';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { AppComponent } from './app.component';
 import { GirlfriendComponent } from './girlfriend/girlfriend.component';
@@ -23,6 +23,9 @@ import { EyesComponent } from './girlfriend/eyes/eyes.component';
 import { FormsModule } from '@angular/forms';
 import { CalculatingComponent } from './calculating/calculating.component';
 import { ResultComponent } from './result/result.component';
+import { HomeComponent } from './home/home.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 
 
@@ -38,6 +41,9 @@ import { ResultComponent } from './result/result.component';
     EyesComponent,
     CalculatingComponent,
     ResultComponent,
+    HomeComponent,
+    SidenavComponent,
+    ToolbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,12 +52,12 @@ import { ResultComponent } from './result/result.component';
     MatIconModule,
     MatButtonModule,
     MatToolbarModule,
-    MatSidenavModule,
     MatSliderModule,
     MatCardModule,
     MatSelectModule,
     MatFormFieldModule,
-    FormsModule
+    FormsModule,
+    MatSidenavModule,
   ],
   providers: [
     provideClientHydration()

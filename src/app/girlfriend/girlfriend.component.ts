@@ -46,8 +46,7 @@ export class GirlfriendComponent{
   }
   //Calcolo J
   public calculate(){
-    let punteggioRel = this.age+(this.height-100)+this.hair+this.body+this.boobs+this.eyeColor;
-    let punteggio = punteggioRel;//punteggio minimo: 17
+    let punteggio = this.age+(this.height-100)+this.hair+this.body+this.boobs+this.eyeColor;
     this.resultService.setPunteggio(punteggio);
   }
 }
