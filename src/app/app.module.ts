@@ -11,6 +11,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { AppRoutingModule } from './app-routing.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import {MatMenuModule} from '@angular/material/menu';
 
 import { AppComponent } from './app.component';
 import { GirlfriendComponent } from './girlfriend/girlfriend.component';
@@ -24,7 +25,6 @@ import { FormsModule } from '@angular/forms';
 import { CalculatingComponent } from './calculating/calculating.component';
 import { ResultComponent } from './result/result.component';
 import { HomeComponent } from './home/home.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 
 
@@ -42,7 +42,6 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     CalculatingComponent,
     ResultComponent,
     HomeComponent,
-    SidenavComponent,
     ToolbarComponent,
   ],
   imports: [
@@ -58,6 +57,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     MatFormFieldModule,
     FormsModule,
     MatSidenavModule,
+    MatMenuModule
   ],
   providers: [
     provideClientHydration()

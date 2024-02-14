@@ -1,5 +1,4 @@
 #title{
-    color: #109e01;
     font-size: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -17,8 +16,10 @@ hr{
 /*titoli*/
 label{
     font-size: 20px;
-    font-family: 'Roboto';
-    color: white;
+    color: rgb(203, 70, 203);
+}
+#calculateBtn{
+    color: rgb(203, 70, 203);
 }
 
   

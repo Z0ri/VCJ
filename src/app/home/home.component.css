@@ -1,0 +1,14 @@
+#title{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 80px;
+    color: #109e01;
+}
+#girlfriendBtn, #boyfriendBtn{
+    margin-top: 5%;
+    margin-left: 30%;
+    height: 100px;
+    width: 500px;
+    font-size: 43px;
+    color: rgb(203, 70, 203);
+}
