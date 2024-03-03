@@ -10,7 +10,6 @@ export class BodyComponent {
   bodyEmitter = new EventEmitter<string>();
   bodyType: string = "";
   selectBody() {
-    console.log(this.bodyType);
     this.bodyEmitter.emit(this.bodyType);
   }
 }

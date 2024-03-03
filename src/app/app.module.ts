@@ -26,6 +26,14 @@ import { CalculatingComponent } from './calculating/calculating.component';
 import { ResultComponent } from './result/result.component';
 import { HomeComponent } from './home/home.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { BoyfriendComponent } from './boyfriend/boyfriend.component';
+import { BoyAgeComponent } from './boyfriend/boy-age/boy-age.component';
+import { BoyBodyComponent } from './boyfriend/boy-body/boy-body.component';
+import { BoyEyesComponent } from './boyfriend/boy-eyes/boy-eyes.component';
+import { BoyHeightComponent } from './boyfriend/boy-height/boy-height.component';
+import { BoyHairComponent } from './boyfriend/boy-hair/boy-hair.component';
+import { BoyNoseComponent } from './boyfriend/boy-nose/boy-nose.component';
+
 
 
 
@@ -43,6 +51,13 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     ResultComponent,
     HomeComponent,
     ToolbarComponent,
+    BoyfriendComponent,
+    BoyAgeComponent,
+    BoyBodyComponent,
+    BoyEyesComponent,
+    BoyHeightComponent,
+    BoyHairComponent,
+    BoyNoseComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,7 +72,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     MatFormFieldModule,
     FormsModule,
     MatSidenavModule,
-    MatMenuModule
+    MatMenuModule,
   ],
   providers: [
     provideClientHydration()

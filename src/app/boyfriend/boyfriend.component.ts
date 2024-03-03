@@ -2,19 +2,18 @@ import { Component, ViewChild } from '@angular/core';
 import { ResultServiceService } from '../services/result-service.service';
 
 @Component({
-  selector: 'app-girlfriend',
-  templateUrl: './girlfriend.component.html',
-  styleUrl: './girlfriend.component.css'
+  selector: 'app-boyfriend',
+  templateUrl: './boyfriend.component.html',
+  styleUrl: './boyfriend.component.css'
 })
-export class GirlfriendComponent{
+export class BoyfriendComponent {
   constructor(private resultService: ResultServiceService){}
   
   age: number = 0;
   height: number = 100;
   hair: number = 0;
-  body: number = 0;  //da fare
-  boobs: number = 0;
-  eyeColor: number = 0; //da fare
+  body: number = 0;
+  eyeColor: number = 0;
 
   //ricezione anni
   onAgeReceived(value: number){
@@ -32,18 +31,14 @@ export class GirlfriendComponent{
   onBodyReceived(value: string){
     this.body = parseInt(value);
   }
-  //ricezione seno
-  onBoobsReceived(value: string){
-    this.boobs = parseInt(value);
-  }
   //ricezione occhi
   onEyesReceived(value: string){
     this.eyeColor = parseInt(value);
   }
   //Calcolo J
   public calculate(){
-    let punteggio = this.age+(this.height-100)+this.hair+this.body+this.boobs+this.eyeColor;
+    let punteggio = this.age+(this.height-100)+this.hair+this.body+this.eyeColor;
     this.resultService.setPunteggio(punteggio);
-    this.resultService.setResultGender("girlfriend");
+    this.resultService.setResultGender("boyfriend");
   }
 }

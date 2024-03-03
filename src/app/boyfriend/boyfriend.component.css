@@ -1,0 +1,25 @@
+#title{
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+.container{
+    text-align: center;
+}
+/*separatore*/ 
+hr{ 
+    width: 80%;
+    height: 1px;
+    background-color: #fff;
+}
+/*titoli*/
+label{
+    font-size: 20px;
+    color: rgb(203, 70, 203);
+}
+#calculateBtn{
+    color: rgb(203, 70, 203);
+}
+
+  

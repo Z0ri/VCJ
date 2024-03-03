@@ -1,13 +1,13 @@
 <app-toolbar></app-toolbar>
 <div class="container">
-    <h1 id="title">How many joints is your GF worth?</h1>
+    <h1 id="title">How many joints is your BF worth?</h1>
         <label for="age">Insert age:</label>
         <br>
-        <app-age (ageEmitter)="onAgeReceived($event)"></app-age>
+        <app-boy-age (ageEmitter)="onAgeReceived($event)"></app-boy-age>
     <hr>
         <label for="height">Insert height(cm):</label>
         <br>
-        <app-height (heightEmitter)="onHeightReceived($event)"></app-height>
+        <app-boy-height (heightEmitter)="onHeightReceived($event)"></app-boy-height>
     <hr>
         <label for="hair">Select hair:</label>
         <br>
@@ -17,9 +17,9 @@
         <br>
         <app-body (bodyEmitter)="onBodyReceived($event)"></app-body>
     <hr>
-        <label for="boobs">Select boob size:</label>
+        <label for="boobs">Select nose size:</label>
         <br>
-        <app-boobs (boobsEmitter)="onBoobsReceived($event)"></app-boobs>
+        <app-boy-nose></app-boy-nose>
     <hr>
         <label for="eyes">Select eye color:</label>
         <br>
